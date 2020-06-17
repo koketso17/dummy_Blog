@@ -1,0 +1,34 @@
+<div class="navbar">
+    <h1>School<code>Admin</code> App</h1>
+    <div class="dropdown">
+        <input type="button" value="Back" onclick="window.history.back()">
+        <i class="fa fa-caret-down"></i>
+  </div>
+  
+  
+  
+   <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">ID No.</th>
+      <th scope="col">Modules</th>
+      <th scope="col">Date Registered</th>
+      <th scope="col">Date Modified</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let adminService of data">
+      <td>{{adminService.id}}</td>
+      <td> {{adminService.name}}</td>
+      <td>{{adminService.email}}</td>
+      <td>{{adminService.idNo}}</td>
+      <td>{{adminService.modules}}</td>
+      <td>{{adminService.dateReg}}</td>
+      <td>{{adminService.dateMod}}</td>
+  
+    </tr>
+    </tbody>
+  </table>
