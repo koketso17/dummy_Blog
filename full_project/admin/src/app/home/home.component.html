@@ -22,18 +22,18 @@
   <tbody>
   <tr *ngFor="let adminService of info; index as j">
     <td>{{j + 1}}</td>
-    <td> {{adminService.name}}</td>
+    <td>{{adminService.name}}</td>
     <td>{{adminService.email}}</td>
     <td>{{adminService.idNo}}</td>
     <td>{{adminService.modules}}</td>
     <td>{{adminService.dateReg}}</td>
     <td>{{adminService.dateMod}}</td>
-    <div>
-      <a href="/details" class="w3-button w3-black">View</a>
-      <br>
-      <a href="/update" class="w3-button w3-black">Update</a>
-      <br>
-      <a href="/delete" class="w3-button w3-black">Delete</a>
+    <div class="spacing">
+      <a href="/details" class="w3-button w3-black"><button type="button" class="btn btn-info">View Profile</button></a>
+      
+      <a href="/update" class="w3-button w3-black"><button type="button" class="btn btn-dark">Update Profile</button></a>
+      
+      <a href="/delete" class="w3-button w3-black"><button type="button" class="btn btn-danger">Delete Profile</button></a>
     </div>
   </tr>
   </tbody>
