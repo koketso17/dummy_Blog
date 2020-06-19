@@ -22,7 +22,7 @@ export class LogRegService {
 
   public check_user ( email, password ) {
 
-    return this.http.post<any>(this.url_auth, { email, password});
+    return this.http.post<any>(this.url_auth, { email: email, password: password});
   }
 
 

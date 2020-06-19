@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit {
   }
 
   check_user() {
+
+    console.log(this.email)
    
     this.LogRegService.check_user(this.email, this.password).subscribe(Response=>{
       console.log(Response);
